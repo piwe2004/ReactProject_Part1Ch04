@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>계산기</title>
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    <div class="row">
+        <input class="inp" disabled id="top-inp">
+    </div>
+    <div class="row">
+        <div class="btn" onclick="inputNum(7)">7</div>
+        <div class="btn" onclick="inputNum(8)">8</div>
+        <div class="btn" onclick="inputNum(9)">9</div>
+        <div class="btn" onclick="inputEqu()">=</div>
+    </div>
+    <div class="row">
+        <div class="btn" onclick="inputNum(4)">4</div>
+        <div class="btn" onclick="inputNum(5)">5</div>
+        <div class="btn" onclick="inputNum(6)">6</div>
+        <div class="btn" onclick="inputOper('+')">+</div>
+    </div>
+    <div class="row">
+        <div class="btn" onclick="inputNum(1)">1</div>
+        <div class="btn" onclick="inputNum(2)">2</div>
+        <div class="btn" onclick="inputNum(3)">3</div>
+        <div class="btn" onclick="inputOper('-')">-</div>
+    </div>
+    <div class="row">
+        <div class="btn btn-lg" onclick="inputNum(0)">0</div>
+        <div class="btn" onclick="inputOper('/')">/</div>
+        <div class="btn" onclick="inputOper('*')">*</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
